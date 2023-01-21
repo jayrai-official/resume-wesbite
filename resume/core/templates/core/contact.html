@@ -1,0 +1,47 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}
+| contact |
+{% endblock title %}
+
+{% block css %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'core/css/contact.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+<div class="main-container">
+    <h2 class="sec-heading">Contact us</h2>
+    <div class="form">
+        <form action="#" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="email" name="email" id="email" placeholder="Enter your Email">
+            <input type="tel" name="phone-no" id="phone-no" placeholder="Enter Mobile No.">
+            <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Enter your message"></textarea>
+            <button class="btn btn-1" type="submit" >Submit</button>
+        </form>
+    </div>
+
+    <div class="social-logos">
+        <div class="insta logo">
+            <a href="https://www.instagram.com/jayrai_official/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+                <i class="fa-brands fa-instagram fa-3x"></i>
+            </a>
+        </div>
+        <div class="linkedin logo">
+            <a href="https://www.linkedin.com/in/jay-rai-150b86249/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-3x"></i>
+            </a>
+        </div>
+        <div class="github logo">
+            <a href="https://github.com/jayrai-official" target="_blank">
+                <i class="fa-brands fa-github fa-3x"></i>
+            </a>
+        </div>
+    </div>
+    <div class="footer">Made with ❤️ by Jay Rai</div>
+</div>
+{% endblock content %}

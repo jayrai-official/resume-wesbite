@@ -1,0 +1,51 @@
+.skills {
+  margin-top: 5%;
+}
+
+.sec-heading{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 7%;
+  border-bottom: 2px solid #6B6D6C;
+  width: 20%;
+  padding-bottom: 10px;
+}
+
+.row{
+  margin-left: 7%;
+}
+
+.progress{
+  width: 70%;
+}
+
+.col {
+  margin: 2% 2% 2% 0;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  /* background-color: #f4f4f4;  take people suggetions*/
+}
+
+.col:hover {
+  background-color: black;
+  color: #42fcd4;
+  cursor: pointer;
+}
+
+.progress-bar {
+  background-color: black;
+}
+
+.col:hover .progress-bar {
+  background-color: #42fcd4;
+  color: black;
+  font-weight: 700;
+}
+
+.footer {
+  text-align: center;
+  flex: 5;
+  color: #6b6d6c;
+  margin-top: 4%;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}

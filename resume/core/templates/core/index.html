@@ -1,0 +1,38 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}
+| Home |
+{% endblock title %}
+
+{% block css %}
+{{block.super}}
+<link rel="stylesheet" href="{% static 'core/css/home.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+<div class="main-container">
+    <div class="profile-image">
+        <img src="{% static 'core/images/main-pic.png' %}" alt="main-pic">
+    </div>
+    <div class="content">
+        <h3 class="title-line">
+           Hey, I am Virat Kohli
+        </h3>
+        <p class="other-lines">
+            In 2018, Kohli became the number one ranked Test batsman, making him the only Indian batsman to achieve the top spot in the ICC rankings in all three formats. His form continued in 2019, where he became the first player to score 20,000 international runs in single decade.
+        </p>
+        <p class="other-lines">
+            Kohli has received many accolades for his performances on the cricket field. He was recognized as the ICC ODI Player of the Year in 2012 and has won Sir Garfield Sobers Trophy, given to the ICC Cricketer of the Year, on two occasions, in 2017 and 2018.
+        </p>
+        <div class="refrences">
+            <form action="{% url 'contact' %}" method="get">   
+                <button class="btn btn-1" type="submit">Hire me</button>
+                <button class="btn btn-2" type="submit">contact</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">Made with ❤️ by Jay Rai</div>
+</div>
+{% endblock content %}

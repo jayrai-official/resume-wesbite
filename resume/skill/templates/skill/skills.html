@@ -1,0 +1,79 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}
+| Skills |
+{% endblock title %}
+
+{% block css %}
+{{block.super}}
+<link rel="stylesheet" href="{% static 'skill/css/skill.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="main-container">
+    <div class="skills">
+    <h2 class="sec-heading">
+        Our Skills
+     </h2>
+
+    <div class="row">
+        <div class="col-lg-5 col">
+            <h3>Python</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" style="width:70%" aria-valuenow="70" aria-valuemax="100" aria-valuemin="0">70%</div>
+            </div>
+        </div>
+        <div class="col-lg-5 col">
+            <h3>Django</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:70%" aria-valuenow="70" aria-valuemax="100" aria-valuemin="0">70%</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5 col">
+            <h3>JavaScript</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" style="width:60%" aria-valuenow="60" aria-valuemax="100" aria-valuemin="0">60%</div>
+            </div>
+        </div>
+        <div class="col-lg-5 col">
+            <h3>HTMl/CSS</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:100%" aria-valuenow="100" aria-valuemax="100" aria-valuemin="0">100%</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5 col">
+            <h3>My SQL</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemax="100" aria-valuemin="0">80%</div>
+            </div>
+        </div>
+        <div class="col-lg-5 col">
+            <h3>Mongo DB</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:50%" aria-valuenow="50" aria-valuemax="100" aria-valuemin="0">50%</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5 col">
+            <h3>Andriod Apps</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" style="width:50%" aria-valuenow="50" aria-valuemax="100" aria-valuemin="0">50%</div>
+            </div>
+        </div>
+        <div class="col-lg-5 col">
+            <h3>Web Apps</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemax="100" aria-valuemin="0">80%</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">Made with ❤️ by Jay Rai</div>
+</div>
+{% endblock content %}

@@ -1,0 +1,96 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}
+| Service |
+{% endblock title %}
+
+{% block css %}
+{{block.super}}
+<link rel="stylesheet" href="{% static 'service/css/service.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="main-container">
+    <h2 class="sec-heading">
+       Our Services
+    </h2>
+    <div class="service">
+
+    <div class="row">
+        <div class="col-lg-4 col-1">
+            <div class="icon">
+                <i class="fa-brands fa-android fa-3x"></i>
+            </div>
+            <div class="title">
+                Andriod
+            </div>
+            <div class="desc">
+                We all also good in Andriod Development
+            </div>
+        </div>
+        <div class="col-lg-4 col-1">
+            <div class="icon">
+                <i class="fa-brands fa-apple fa-3x"></i>
+            </div>
+            <div class="title">
+                IOS
+            </div>
+            <div class="desc">
+                We all also good in IOS Development
+            </div>
+        </div>
+        <div class="col-lg-4 col-1">
+            <div class="icon">
+                <i class="fa-brands fa-windows fa-3x"></i>
+            </div>
+            <div class="title">
+                Windows
+            </div>
+            <div class="desc">
+                We all also good in windows OS Development
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-1">
+            <div class="icon">
+                <i class="fa-solid fa-code fa-3x"></i>
+            </div>
+            <div class="title">
+                Web Development
+            </div>
+            <div class="desc">
+                We all also good in Web Development
+            </div>
+        </div>
+        <div class="col-lg-4 col-1">
+            <div class="icon">
+                <i class="fa-solid fa-globe fa-3x"></i>
+            </div>
+            <div class="title">
+                Browser
+            </div>
+            <div class="desc">
+                We all also good in Browser Development
+            </div>
+        </div>
+        <div class="col-lg-4 col-1">
+            <div class="icon">
+                <i class="fa-brands fa-searchengin fa-3x"></i>
+            </div>
+            <div class="title">
+                SEO
+            </div>
+            <div class="desc">
+                We all also good in SEO
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="footer">Made with ❤️ by Jay Rai</div>
+    
+</div>
+{% endblock content %}

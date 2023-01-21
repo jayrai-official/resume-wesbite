@@ -1,0 +1,90 @@
+/* global styles */
+html{
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'McLaren', cursive; */
+}
+.container-fluid {
+  display: flex;
+  height: 100vh;
+}
+.side-bar {
+  background-color: white;
+  flex: 0.2;
+  border-right: 2px solid #6B6D6C;
+}
+
+.side-bar h3 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.side-bar hr {
+  width: 80%;
+  margin: auto;
+}
+
+.main-content {
+  flex: 0.8;
+  background-color: white;
+}
+
+/* -------------------------- global styles >>> side-bar styles */
+.profile-pic {
+  height: 45vh;
+  padding-top: 25px;
+}
+.profile-pic img {
+  display: flex;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.nav-link {
+  text-align: center;
+  height: 55vh;
+  padding-top: 15%;
+}
+
+.link-items {
+  list-style: none;
+  margin: 7% 0;
+  width: 100%;
+  font-size: 1.3rem;
+  color: #6B6D6C;
+
+}
+
+.link-items:hover {
+  background-color: black;
+  color: #42fcd4;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  display: block;
+}
+.link:hover {
+  color: #42fcd4;
+}
+
+.active{
+  background-color: black;
+  color: #42fcd4;
+}
+/* Home page styles */

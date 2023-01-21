@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} Enter Here {% endblock title %}</title>
+    <!-- bootstrap CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- {% comment %} google Font link {% endcomment %} -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- {% comment %} Fontawesome link {% endcomment %} -->
+    <script src="https://kit.fontawesome.com/a4ceb3bfd3.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS link -->
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}" />
+    {% endblock css %}
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="side-bar">
+        <div class="profile-pic">
+          <img src="{% static 'core/images/profile.png' %}" alt="profile-pic" />
+          <h3>virat Kohli</h3>
+          <hr />
+        </div>
+        <div class="nav-link">
+          <nav class="link-list">
+            <li class="link-items">
+              <a class="link {{home}}" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="link-items">
+              <a class="link {{service}}" href="{% url 'service' %}">Service</a>
+            </li>
+            <li class="link-items">
+              <a class="link {{skill}}" href="{% url 'skill' %}">Skill</a>
+            </li>
+            <li class="link-items">
+              <a class="link {{contact}}" href="{% url 'contact' %}">contact</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+      <div class="main-content">{% block content %} {% endblock content %}</div>
+    </div>
+    <!-- bootstrap JS link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
