@@ -16,7 +16,8 @@
 <div class="main-container">
     <h2 class="sec-heading">Contact us</h2>
     <div class="form">
-        <form action="#" method="post">
+        <form method="post">
+            {% csrf_token %}
             <input type="text" name="name" id="name" placeholder="Enter your name">
             <input type="email" name="email" id="email" placeholder="Enter your Email">
             <input type="tel" name="phone-no" id="phone-no" placeholder="Enter Mobile No.">
